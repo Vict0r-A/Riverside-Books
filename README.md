@@ -39,9 +39,10 @@ The hallucination risk is lower than a fully generative chatbot because this bot
 
 1) Clone the repository
    
-   ```bash
+```bash
 git clone https://github.com/Vict0r-A/Riverside-Books.git
 ```
+
 2)  Install dependencies:
 
 ```bash

@@ -26,24 +26,27 @@ The hallucination risk is lower than a fully generative chatbot because this bot
 
 ### What I would improve with more time
 
-- Add unit tests, I didnt because I didnt want to run over 2 hours
+- Add unit tests, I didnt because I didnt want to run over 2 hours.
 - Cache the FAQ embeddings so they do not need to be recreated every time the app starts.
 - Reduce API cost and improve startup speed by reusing stored embeddings.
 - Test a local embedding model as a lower-cost offline alternative.
-- If I needed to scale the application, I may use a vector database.
+- If I needed to scale the application, Id probably use a vector database.
 - Adding a frontend to enhance the user experience.
 
 
 ## How to Run the Bot
 
-Install dependencies:
+1) Install dependencies:
 
 ```bash
 npm install
+```
+2) Create a .env file in the project root:
+```bash
+touch .env
+```
 
-Create a .env file in the project root:
-
-
-Run the bot from the project root:
-npx ts-node src/main.ts
-
+3) Run the bot from the project root:
+```bash
+npx ts-node src/main.ts 
+```

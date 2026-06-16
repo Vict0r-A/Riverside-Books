@@ -7,7 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { FAQ } from "./types";
 export function loadFAQs() : FAQ[] {
-    const fileLocation = path.join(process.cwd(), "faqs.json");
+    const fileLocation = path.join(process.cwd(), "src", "faqs.json");
     const fileContents = fs.readFileSync(fileLocation, "utf-8");
     const faqsArray = JSON.parse(fileContents) as FAQ[];
 

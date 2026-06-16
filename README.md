@@ -48,7 +48,7 @@ git clone https://github.com/Vict0r-A/Riverside-Books.git
 ```bash
 npm install
 ```
-3) Create a .env file in the project root:
+3) Create a .env file in the project root and add your api key to a variable named "OPENAI_API_KEY":
 ```bash
 touch .env
 ```

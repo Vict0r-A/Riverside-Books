@@ -15,5 +15,3 @@ export function loadFAQs() : FAQ[] {
     return faqsArray;
 
 }
-
-console.log(loadFAQs())

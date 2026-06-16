@@ -36,17 +36,27 @@ The hallucination risk is lower than a fully generative chatbot because this bot
 
 ## How to Run the Bot
 
-1) Install dependencies:
+
+1) Clone the repository
+   
+   ```bash
+git clone https://github.com/Vict0r-A/Riverside-Books.git
+```
+2)  Install dependencies:
 
 ```bash
 npm install
 ```
-2) Create a .env file in the project root:
+3) Create a .env file in the project root:
 ```bash
 touch .env
 ```
+or
+```bash
+cp .env.example .env
+```
 
-3) Run the bot from the project root:
+4) Run the bot from the project root:
 ```bash
 npx ts-node src/main.ts 
 ```

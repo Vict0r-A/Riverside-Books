@@ -1,14 +1,14 @@
 //creating the shape of objects to iteract with the api and within the codebase
 
-export type FAQs = {
-    id: number;
+export type FAQ = {
+ 
     question : string;
-    answer : string;
+  
 }
 
 //assign each faq with an embedding vector
 export type FAQEmbedding = {
-    faq : FAQs;
+    faq : FAQ;
     embedding : number[]
 }
 
@@ -21,3 +21,8 @@ export type UserQuestionEmbedding = {
     userQuestion :UserQuestion;
     embedding : number[];
 }
+
+export type SimilarityResult = {
+  bestMatch: FAQEmbedding;
+  bestScore: number;
+};

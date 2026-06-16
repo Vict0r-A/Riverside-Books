@@ -3,6 +3,7 @@
 export type FAQ = {
  
     question : string;
+    answer: string;
   
 }
 
@@ -22,6 +23,10 @@ export type UserQuestionEmbedding = {
     embedding : number[];
 }
 
+
+//the result of cosine similarity checking
+//the best score being the score of the highest cosine similarity
+// FAQembedding being the FAQ with the highest score
 export type SimilarityResult = {
   bestMatch: FAQEmbedding;
   bestScore: number;

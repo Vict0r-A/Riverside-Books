@@ -1,13 +1,18 @@
-const readline = require('node:readline/promises'); 
-const { stdin: input, stdout: output } = require('node:process');
+import readline from "node:readline/promises";
+import { stdin as input, stdout as output } from "node:process";
+import { createEmbedding } from "./embeddings";
+//take user input. from this user input, convert it into an embedding via the createEmbedding function
 
-async function getUserInput() {
- 
+export async function getUserInputEmbedding(): Promise<number[]> {
   const rl = readline.createInterface({ input, output });
-  const userResponse = await rl.question("Hello, welcome to Riverside Books! How can we Help?\n> ");
-   
+
+  const userResponse = await rl.question(
+    "Hello, welcome to Riverside Books! How can we help?\n> "
+  );
 
   rl.close();
-}
 
-getUserInput();
+  const userEmbedding = await createEmbedding(userResponse);
+
+  return userEmbedding;
+}
